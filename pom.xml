@@ -110,19 +110,19 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <finalName>springmvc-user-reg-login</finalName>
-        <sourceDirectory>src/main/java</sourceDirectory>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+<!--    <build>-->
+<!--        <finalName>springmvc-user-reg-login</finalName>-->
+<!--        <sourceDirectory>src/main/java</sourceDirectory>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.5.1</version>-->
+<!--                <configuration>-->
+<!--                    <source>${java.version}</source>-->
+<!--                    <target>${java.version}</target>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 </project>
