@@ -1,1 +1,1 @@
-web:java -Dspring.profiles.active=default -Dserver.port=$PORT -jar target/HealthApplication_ICDE-1.0-SNAPSHOT.jar
+web:java -jar target/HealthApplication_ICDE-1.0-SNAPSHOT.jar
