@@ -1,10 +1,10 @@
 springmvc\dao\UserDao.class
 springmvc\config\JpaConfiguration.class
+springmvc\dao\UserDaoImpl.class
+springmvc\service\UserService.class
 springmvc\controller\LoginController.class
 springmvc\controller\HomeController.class
-springmvc\dao\UserDaoImpl.class
 springmvc\dao\UserMapper.class
-springmvc\service\UserService.class
 springmvc\service\UserServiceImpl.class
 springmvc\model\User.class
 springmvc\controller\RegistrationController.class

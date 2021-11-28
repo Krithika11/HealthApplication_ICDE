@@ -17,11 +17,19 @@
     <property name="dataSource" ref="datasource" />
   </bean>
 
+<!--  <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+<!--    <property name="driverClassName" value="com.mysql.jdbc.Driver" />-->
+<!--    <property name="url" value="jdbc:mysql://localhost:3306/demohealthapp" />-->
+<!--    <property name="username" value="root" />-->
+<!--    <property name="password" value="Sure100%result" />-->
+<!--  </bean>-->
+
+
   <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-    <property name="url" value="jdbc:mysql://localhost:3306/demohealthapp" />
-    <property name="username" value="root" />
-    <property name="password" value="Sure100%result" />
+    <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+    <property name="url" value="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_c7ffd05b6ea39f1?reconnect=true" />
+    <property name="username" value="b74c61c259b732" />
+    <property name="password" value="587dfa2f" />
   </bean>
 
 </beans>
