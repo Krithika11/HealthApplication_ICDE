@@ -6,7 +6,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
-@Configuration
+@Configuration("spring.datasource")
 class JpaConfiguration {
         @Bean
         public DataSource dataSource() {
@@ -19,6 +19,7 @@ class JpaConfiguration {
             dataSource.setUrl("jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_c7ffd05b6ea39f1?reconnect=true");
             dataSource.setUsername("b74c61c259b732");
             dataSource.setPassword("587dfa2f");
+//            dataSource.setPassword();
             return dataSource;
         }
 
