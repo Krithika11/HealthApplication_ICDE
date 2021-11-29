@@ -13,7 +13,7 @@ import java.net.URISyntaxException;
 class JpaConfiguration {
         @Bean
             public BasicDataSource dataSource() throws URISyntaxException {
-            URI dbUri = new URI(System.getenv("CLEARDB_DATABSE_URL"));
+            URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
 
             String username = dbUri.getUserInfo().split(":")[0];
             String password = dbUri.getUserInfo().split(":")[1];
