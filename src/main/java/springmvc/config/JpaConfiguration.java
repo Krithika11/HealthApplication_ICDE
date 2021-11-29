@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-@Configuration("spring.datasource")
+@Configuration
 class JpaConfiguration {
         @Bean
             public BasicDataSource dataSource() throws URISyntaxException {
@@ -21,7 +21,7 @@ class JpaConfiguration {
 
             BasicDataSource basicDataSource = new BasicDataSource();
 
-            DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//            DriverManagerDataSource dataSource = new DriverManagerDataSource();
             basicDataSource.setUsername(username);
             basicDataSource.setPassword(password);
             basicDataSource.setUrl(dbUrl);
