@@ -1,5 +1,6 @@
 package springmvc.dao;
 
+import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Configuration;
 import springmvc.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ import java.util.List;
 public class UserDaoImpl implements UserDao {
 
   @Autowired
-  DataSource datasource;
+  BasicDataSource datasource;
 
   @Autowired
   JdbcTemplate jdbcTemplate;
