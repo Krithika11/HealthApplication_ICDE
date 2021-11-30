@@ -1,7 +1,5 @@
 package springmvc.dao;
 
-import org.apache.commons.dbcp2.BasicDataSource;
-import org.springframework.context.annotation.Configuration;
 import springmvc.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -10,21 +8,34 @@ import org.springframework.jdbc.core.RowMapper;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
 
   @Autowired
-  BasicDataSource datasource;
+  DataSource datasource;
 
   @Autowired
   JdbcTemplate jdbcTemplate;
 
   public int register(User user) {
+    int result =0;
     String sql = "insert into USER_BASICINFO values(?,?,?,?,?)";
 
     return jdbcTemplate.update(sql, new Object[] { user.getUsername(), user.getPassword(),
             user.getEmail(), user.getAge(), user.getGender() });
+//    String username = user.getUsername();
+//    String password = user.getPassword();
+//    String gender = user.getGender();
+//    String email = user.getEmail();
+//    int age = user.getAge();
+//    user.setUsername(username);
+//    user.setUsername(password);
+//    user.setGender(gender);
+//    user.setEmail(email);
+//    user.setAge(age);
+//    return result;
   }
 
   public User validateUser(User login) {
@@ -32,6 +43,19 @@ public class UserDaoImpl implements UserDao {
     List<User> users = jdbcTemplate.query(sql, new UserMapper());
 
     return users.size() > 0 ? users.get(0) : null;
+//    User user = new User();
+//    List <User> users1 = new ArrayList<>();
+//
+//    String username = "Admin";
+//    String password = "admin";
+//    if(login.getUsername().equals(username) && login.getPassword().equals(password)) {
+//      user.setUsername(login.getUsername());
+//      user.setPassword(login.getPassword());
+//    }
+//    else {
+//      user = null;
+//    }
+//    return user;
   }
 
   public boolean validateUserRegistration(User register) {
