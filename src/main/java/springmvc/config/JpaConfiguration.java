@@ -16,9 +16,9 @@ class JpaConfiguration {
 
           DriverManagerDataSource dataSource = new DriverManagerDataSource();
             dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-            dataSource.setUrl("jdbc:mysql://localhost:3306/demohealthapp");
-            dataSource.setUsername("root");
-            dataSource.setPassword("Sure100%result");
+            dataSource.setUrl("mysql://b74c61c259b732:587dfa2f@us-cdbr-east-04.cleardb.com/heroku_c7ffd05b6ea39f1?reconnect=true&useSSL=false");
+            dataSource.setUsername("b74c61c259b732");
+            dataSource.setPassword("587dfa2f");
 //            dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 //            dataSource.setUrl("mysql://xmpzahrqg6y14g3w:edv9sww65j47ep4d@yjo6uubt3u5c16az.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nhrngjhso8gdm6js");
 //            dataSource.setUsername("xmpzahrqg6y14g3w");
