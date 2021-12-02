@@ -69,12 +69,15 @@
             <h5> Please enter a different SYMPTOM </h5>
         </c:otherwise>
     </c:choose>
+    <br>
+    <br>
+    <p> <span style="color:purple;font-weight:bold">The following details are sent to your E-mail address </span> </p>
 
 </div>
 
+
 <p><a class="login_button" href="login">Logout</a></p>
-<p><a class="home_button" href="profile">Home</a></p>
-<%--<p> New user? Please click <a href="login">HERE</a> to Login </p>--%>
+<p><a class="home_button" href="profile">Profile</a></p>
 
 
 </body>

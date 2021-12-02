@@ -30,16 +30,16 @@ public class UserDaoImpl implements UserDao {
 //
 //    return jdbcTemplate.update(sql, new Object[] { user.getUsername(), user.getPassword(),
 //            user.getEmail(), user.getAge(), user.getGender() });
-      username = user.getUsername();
-      password = user.getPassword();
-      gender = user.getGender();
-      email = user.getEmail();
-      age = user.getAge();
-      user.setUsername(username);
-      user.setPassword(password);
-      user.setGender(gender);
-      user.setEmail(email);
-      user.setAge(age);
+    username = user.getUsername();
+    password = user.getPassword();
+    gender = user.getGender();
+    email = user.getEmail();
+    age = user.getAge();
+    user.setUsername(username);
+    user.setPassword(password);
+    user.setGender(gender);
+    user.setEmail(email);
+    user.setAge(age);
     return result;
   }
 
@@ -49,28 +49,27 @@ public class UserDaoImpl implements UserDao {
 //
 //    return users.size() > 0 ? users.get(0) : null;
     User user = new User();
-//    List <User> users1 = new ArrayList<>();
     username = "Admin";
     password = "admin123";
     String username1 = "Geeth";
     String password1 = "geeth123";
 
     if(login.getUsername().equals(username) && login.getPassword().equals(password)) {
-        user.setUsername(login.getUsername());
-        user.setPassword(login.getPassword());
-        user.setEmail("Admin");
-        user.setGender("Male");
-        user.setAge(25);
+      user.setUsername(login.getUsername());
+      user.setPassword(login.getPassword());
+      user.setEmail("admin@gmail.com");
+      user.setGender("Male");
+      user.setAge(25);
     }
     else if(login.getUsername().equals(username1) && login.getPassword().equals(password1)) {
-        user.setUsername(login.getUsername());
-        user.setPassword(login.getPassword());
-        user.setEmail("geeth@gmail.com");
-        user.setGender("Female");
-        user.setAge(35);
+      user.setUsername(login.getUsername());
+      user.setPassword(login.getPassword());
+      user.setEmail("krithikaananthanarayan@gmail.com");
+      user.setGender("Female");
+      user.setAge(35);
     }
-      else {
-        user = null;
+    else {
+      user = null;
     }
     return user;
   }
@@ -80,7 +79,7 @@ public class UserDaoImpl implements UserDao {
     if(register.getUsername().isEmpty() || register.getPassword().isEmpty() ||
             register.getEmail().isEmpty() || register.getGender().isEmpty() ||
             register.getAge()==0)
-       error = true;
+      error = true;
     return error;
 
   }

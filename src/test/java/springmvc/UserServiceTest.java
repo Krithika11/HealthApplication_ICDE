@@ -64,4 +64,21 @@ public class UserServiceTest {
     Assert.assertEquals("Admin", user.getUsername());
   }
 
+  @Test
+  public void testErrorForValidateSymptom() {
+    User login = new User();
+    login.setSymptom("Fever");
+
+    boolean user = userService.validateSymptom(login);
+    Assert.assertEquals(false, user);
+  }
+
+  @Test
+  public void testSuccessForValidateSymptom() {
+    User login = new User();
+    login.setSymptom("");
+
+    boolean user = userService.validateSymptom(login);
+    Assert.assertEquals(true, user);
+  }
 }

@@ -2,9 +2,12 @@ springmvc\dao\UserDao.class
 springmvc\config\JpaConfiguration.class
 springmvc\dao\UserDaoImpl.class
 springmvc\service\UserService.class
+springmvc\email\ConfirmMail$1.class
+springmvc\email\ConfirmMail.class
 springmvc\controller\LoginController.class
-springmvc\controller\HomeController.class
 springmvc\dao\UserMapper.class
+springmvc\email\JavaMail$1.class
 springmvc\service\UserServiceImpl.class
+springmvc\email\JavaMail.class
 springmvc\model\User.class
 springmvc\controller\RegistrationController.class

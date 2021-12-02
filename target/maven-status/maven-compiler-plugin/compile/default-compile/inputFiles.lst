@@ -1,5 +1,5 @@
 C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\service\UserService.java
-C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\controller\HomeController.java
+C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\email\JavaMail.java
 C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\config\JpaConfiguration.java
 C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\controller\LoginController.java
 C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\dao\UserDaoImpl.java
@@ -7,3 +7,5 @@ C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\model
 C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\service\UserServiceImpl.java
 C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\dao\UserDao.java
 C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\controller\RegistrationController.java
+C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\email\ConfirmMail.java
+C:\Users\krith\IdeaProjects\HealthApplication_ICDE\src\main\java\springmvc\config\EmailConfiguration.java

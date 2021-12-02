@@ -13,17 +13,8 @@ import java.net.URISyntaxException;
 class JpaConfiguration {
         @Bean
             public DataSource dataSource() {
-//            URI dbUri = new URI(System.getenv("DATABASE_URL"));
-//
-//            String username = dbUri.getUserInfo().split(":")[0];
-//            String password = dbUri.getUserInfo().split(":")[1];
-//            String dbUrl = "jdbc:mysql//" + dbUri.getHost() + dbUri.getPath();
-//            BasicDataSource basicDataSource = new BasicDataSource();
 
           DriverManagerDataSource dataSource = new DriverManagerDataSource();
-//            basicDataSource.setUsername(username);
-//            basicDataSource.setPassword(password);
-//            basicDataSource.setUrl(dbUrl);
             dataSource.setDriverClassName("com.mysql.jdbc.Driver");
             dataSource.setUrl("jdbc:mysql://localhost:3306/demohealthapp");
             dataSource.setUsername("root");

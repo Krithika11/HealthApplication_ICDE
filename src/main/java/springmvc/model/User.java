@@ -1,5 +1,7 @@
 package springmvc.model;
 
+import org.springframework.context.ApplicationListener;
+
 import javax.validation.constraints.*;
 
 public class User {

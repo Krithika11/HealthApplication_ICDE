@@ -1,17 +1,18 @@
 package springmvc.controller;
 
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import springmvc.email.JavaMail;
 import springmvc.model.User;
 import springmvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -20,6 +21,9 @@ public class LoginController {
 
   @Autowired
   UserService userService;
+
+  @Autowired
+  ApplicationEventPublisher eventPublisher;
 
   @RequestMapping(value = "/login", method = RequestMethod.GET)
   public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
@@ -34,15 +38,6 @@ public class LoginController {
       @ModelAttribute("login") User users, Map<String, Object> model){
     ModelAndView mav = null;
 
-
-//    List<String> symptomList = new ArrayList<>();
-//    symptomList.add("Cough");
-//    symptomList.add("Fever");
-//    symptomList.add("Headache");
-//    symptomList.add("Sore throat");
-//    symptomList.add("Vomiting");
-//    symptomList.add("Back pain");
-//    model.put("symptomList", symptomList);
     User user = userService.validateUser(users);
     if (null != user) {
       mav = new ModelAndView("profileInformation");
@@ -51,16 +46,11 @@ public class LoginController {
       mav = new ModelAndView("login");
       mav.addObject("message", "Username or Password is wrong!!");
     }
-//    System.out.println("Home page requested");
-//
-//    mav.addObject("searchForm",user);
-//    mav = new ModelAndView("profileInformation");
-
     return mav;
   }
   @RequestMapping(value = "/search", method = RequestMethod.POST)
-  public ModelAndView goResultsPage(@ModelAttribute("login") User user, BindingResult result,
-                              Map<String, Object> model) {
+  public ModelAndView goResultsPage(HttpServletRequest request, HttpServletResponse response,@ModelAttribute("login") User user, BindingResult result,
+                              Map<String, Object> model) throws MessagingException {
     ModelAndView mav = null;
 
     boolean error = userService.validateSymptom(user);
@@ -72,6 +62,8 @@ public class LoginController {
     else {
       mav = new ModelAndView("results_page");
       mav.addObject("login",user);
+
+      JavaMail.sendMail(user);
       if (result.hasErrors()) {
         // form validation error
         System.out.println("Error in register page");
@@ -87,10 +79,6 @@ public class LoginController {
 
         ModelAndView mav = new ModelAndView("profileInformation");
         mav.addObject("login", user);
-//
-//    mav.addObject("searchForm",user);
-//    mav = new ModelAndView("profileInformation");
-
     return mav;
   }
 
