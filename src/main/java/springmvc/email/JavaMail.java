@@ -23,6 +23,7 @@ public class JavaMail {
         properties.put("mail.smtp.starttls.enable","true");
         properties.put("mail.smtp.host","smtp.gmail.com");
         properties.put("mail.smtp.port","587");
+        properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
         String myEmail = "aealthawarenessservice@gmail.com";
         String password = "healthawareness";
