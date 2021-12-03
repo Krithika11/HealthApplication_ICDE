@@ -6,16 +6,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Health Information</title>
 	<style><%@include file="/css/index.css"%></style>
+<%--		<style>--%>
+<%--			body {--%>
+<%--				background-image: url('https://wellness.usask.ca/calendar/images/mental-health-web.jpg');--%>
+<%--				background-repeat: no-repeat;--%>
+<%--				background-attachment: fixed;--%>
+<%--				background-size: cover;--%>
+<%--				background-;--%>
+<%--				opacity: 0.5;--%>
+<%--			}--%>
+<%--		</style>--%>
 </head>
 <body>
-<%--	<table align="center">--%>
-<%--		<tr>--%>
-<%--			<td><a href="login">Login</a></td>--%>
-<%--			<td><a href="register">Register</a></td>--%>
-<%--		</tr>--%>
-<%--	</table>--%>
+
 	<div class="left_container"></div>
-	<div class="right_container"></div>
+<%--	<div class="right_container"></div>--%>
 	<!-- ===== STRIPS ===== -->
 	<div class="strips">
 		<div class="left_strip"></div>

@@ -11,8 +11,9 @@
 	<style><%@include file="/css/index.css"%></style>
 </head>
 <body>
+
 <div class="left_container"></div>
-<div class="right_container"></div>
+<%--<div class="right_container"></div>--%>
 <!-- ===== STRIPS ===== -->
 <div class="strips">
 	<div class="left_strip"></div>
@@ -23,7 +24,6 @@
 <center>
 	<h2>Thank you, your email has been verified successfully.</h2>
 </center>
-	<span
 <p> Please click <a href="login">HERE</a> to Login </p>
 </div>
 </body>

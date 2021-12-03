@@ -9,9 +9,8 @@
     <style><%@include file="/css/index.css"%></style>
 </head>
 <body>
-
 <div class="left_container"></div>
-<div class="right_container"></div>
+<%--<div class="right_container"></div>--%>
 <!-- ===== STRIPS ===== -->
 <div class="strips">
     <div class="left_strip"></div>

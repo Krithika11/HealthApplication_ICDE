@@ -13,7 +13,7 @@
 <body>
 
 <div class="left_container"></div>
-<div class="right_container"></div>
+<%--<div class="right_container"></div>--%>
 <!-- ===== STRIPS ===== -->
 <div class="strips">
 	<div class="left_strip"></div>
@@ -52,6 +52,7 @@
 			<td style="font-style: oblique; color: darkred;">${message}</td>
 		</tr>
 	</table>
+</div>
 </div>
 </body>
 </html>

@@ -15,8 +15,9 @@
 	</head>
 <body>
 
+
 <div class="left_container"></div>
-<div class="right_container"></div>
+<%--<div class="right_container"></div>--%>
 <!-- ===== STRIPS ===== -->
 <div class="strips">
 	<div class="left_strip"></div>
@@ -30,7 +31,7 @@
 	<form:form id="regForm" modelAttribute="user" action="registerProcess"
 		method="post">
 
-		<table border = 0, align="center">
+		<table align="center" border="0">
 			<tr>
 				<td colspan="2" align="center">ENTER YOUR DETAILS</td>
 			</tr>
@@ -67,10 +68,10 @@
 				<td><form:errors path="age" cssClass="error"/></td>
 			</tr>
 			<tr>
-				<td colspan="2" align="center"></td>
-				<td><form:button id="register" name="register">REGISTER</form:button></td>
+				<td></td>
+				<td align="center"><form:button id="register" name="register">REGISTER</form:button></td>
 			</tr>
-			<table align="center">
+		</table>
 	</form:form>
 			<p> Please click <a href="login">HERE</a> to Login </p>
 	<table align = "center">

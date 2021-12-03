@@ -50,7 +50,7 @@ public class ConfirmMail {
             message.setSubject("Welcome to Health Awareness Application. Confirm your email address");
             String htmlcode = "<h2> Hello, " + user.getUsername() +
                             "<h4> Please click on the below link to confirm your email address\n" +
-                            "<p><a href=\"confirm\">Confirm my email address</a></p>";
+                            "<p><a href=\"https://03ff-96-20-228-247.ngrok.io/HealthApplication_ICDE/confirm\">Confirm my email address</a></p>";
             message.setContent(htmlcode, "text/html");
             return message;
         } catch (MessagingException e) {

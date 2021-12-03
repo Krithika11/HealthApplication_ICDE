@@ -10,9 +10,8 @@
 </head>
 <body>
 
-
 <div class="left_container"></div>
-<div class="right_container"></div>
+<%--<div class="right_container"></div>--%>
 <!-- ===== STRIPS ===== -->
 <div class="strips">
     <div class="left_strip"></div>
@@ -71,7 +70,7 @@
     </c:choose>
     <br>
     <br>
-    <p> <span style="color:purple;font-weight:bold">The following details are sent to your E-mail address </span> </p>
+    <p> <span style="color:darkgoldenrod;font-weight:bold">The following details are sent to your E-mail address </span> </p>
 
 </div>
 

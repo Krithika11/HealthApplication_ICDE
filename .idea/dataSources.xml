@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="demohealthapp@localhost" uuid="f80e7f55-cce1-41e6-a5ad-c7ec2d48d100">
+    <data-source source="LOCAL" name="icdehealthawareness@localhost" uuid="03e3b81f-eccd-46c2-a380-2700dc7306f5">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/demohealthapp</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/icdehealthawareness</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

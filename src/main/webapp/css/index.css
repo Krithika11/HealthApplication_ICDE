@@ -18,17 +18,17 @@ html, body {
     height: 100vh;
     font-family: 'Poppins',sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: black;
     overflow: hidden !important;
 }
 
 a {
-    color: wheat;
+    color: darkgoldenrod;
     cursor: pointer;
 }
 
 a:hover{
-    border-bottom: 1px solid wheat;
+    border-bottom: 1px solid darkorange;
     font-weight: 600;
 }
 
@@ -43,16 +43,21 @@ a:hover{
 .left_container, .right_container {
     position: absolute;
     height: 100%;
-    width: 50%;
-    z-index: -50;
+    width: 100%;
+    z-index: auto;
 }
 .left_container {
-    background: seagreen;
-}
-.right_container {
-    left: 50%;
     background: steelblue;
+    background-image: url('https://cdn.wallpapersafari.com/73/96/UzAFcl.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 0.3;
 }
+/*.right_container {*/
+/*    left: 50%;*/
+/*    background: steelblue;*/
+/*}*/
 
 /*===== STRIPS =====*/
 .left_strip, .right_strip{
@@ -72,7 +77,7 @@ a:hover{
 
 .login_url{
     position: absolute;
-    color: #fff;
+    color: purple;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -187,5 +192,13 @@ button:hover::before{
 }
 
 u{
-    color:purple;
+    color:darkgoldenrod;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
 }
